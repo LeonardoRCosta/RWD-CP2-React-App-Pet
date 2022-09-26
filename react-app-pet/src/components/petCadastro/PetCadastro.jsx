@@ -21,6 +21,8 @@ export default function PetCadastro() {
         <input type="file" name="imgPet" />
         <label htmlFor="obs">Observações</label>
         <textarea name="obs" cols="30" rows="10"></textarea>
+
+        <button type='submit'>Adicionar</button>
       </Form>
     </div>
   )

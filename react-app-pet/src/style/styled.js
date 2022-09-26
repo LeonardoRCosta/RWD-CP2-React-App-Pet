@@ -7,4 +7,18 @@ export const Form = styled.form`
     padding: 1vh 0;
     outline: none;
   }
+  button {
+    border-radius : 2px;
+    padding: 1vh  8vw;
+    margin: auto;
+    border: solid 2px #277355;
+    color : #faaf00;
+    font-size : 1.2rem;
+    :hover {
+      background-color: #277352;
+      color: #fff;
+      transition: all .4s ease-in-out;
+      border: solid 2px #faaf00;
+    }
+  }
 `;
