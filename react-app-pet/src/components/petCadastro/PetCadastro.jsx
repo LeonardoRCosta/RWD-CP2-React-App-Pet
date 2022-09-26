@@ -1,10 +1,10 @@
 import React from 'react'
-
+import { Form } from '../../style/styled'
 export default function PetCadastro() {
   return (
     <div>
       <h1>Dados do Pet</h1>
-      <form action="#">
+      <Form action="#">
         <label htmlFor="nmPet">Nome</label>
         <input type="text" name="nomePet" />
         <label htmlFor="idadePet">Idade</label>
@@ -21,7 +21,7 @@ export default function PetCadastro() {
         <input type="file" name="imgPet" />
         <label htmlFor="obs">Observações</label>
         <textarea name="obs" cols="30" rows="10"></textarea>
-      </form>
+      </Form>
     </div>
   )
 }
