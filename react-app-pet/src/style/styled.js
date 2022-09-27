@@ -6,6 +6,13 @@ export const Form = styled.form`
   input {
     padding: 1vh 0;
     outline: none;
+    width: 30vw; 
+
+  }
+  textarea{
+    width: 30vw;
+    resize: none;
+    outline: none;
   }
   
 `;
