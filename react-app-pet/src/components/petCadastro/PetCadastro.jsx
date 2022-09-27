@@ -1,9 +1,13 @@
 import React from 'react'
-import { Form, Button} from '../../style/styled'
+import { Form, Button} from '../../style/styled';
+import ListaFormulario from '../teste/ListaFormulario';
+
 export default function PetCadastro() {
+
   return (
     <div>
       <h1>Dados do Pet</h1>
+      <ListaFormulario/>
       <Form action="#">
         <label htmlFor="nmPet">Nome</label>
         <input type="text" name="nomePet" />
@@ -24,6 +28,7 @@ export default function PetCadastro() {
 
         <Button type='submit'>Adicionar</Button>
       </Form>
+      
     </div>
   )
 }
