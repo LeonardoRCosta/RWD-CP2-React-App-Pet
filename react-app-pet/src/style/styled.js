@@ -7,18 +7,25 @@ export const Form = styled.form`
     padding: 1vh 0;
     outline: none;
   }
-  button {
-    border-radius : 2px;
+  
+`;
+
+export const Button = styled.button`
+
+border-radius : 2px;
     padding: 1vh  8vw;
     margin: auto;
-    border: solid 2px #277355;
-    color : #faaf00;
+    border: solid px #277355;
+    border-radius: 5px;
+    color : #000;
     font-size : 1.2rem;
+    background-color: #faaf00;
     :hover {
       background-color: #277352;
-      color: #fff;
+      color: #000;
       transition: all .4s ease-in-out;
-      border: solid 2px #faaf00;
+      border: solid 2px #000;
+
+
     }
-  }
-`;
+`

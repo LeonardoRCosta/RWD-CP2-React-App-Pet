@@ -1,5 +1,5 @@
 import React from 'react'
-import { Form } from '../../style/styled'
+import { Form, Button} from '../../style/styled'
 export default function PetCadastro() {
   return (
     <div>
@@ -22,7 +22,7 @@ export default function PetCadastro() {
         <label htmlFor="obs">Observações</label>
         <textarea name="obs" cols="30" rows="10"></textarea>
 
-        <button type='submit'>Adicionar</button>
+        <Button type='submit'>Adicionar</Button>
       </Form>
     </div>
   )
