@@ -1,30 +1,29 @@
 import React from 'react'
 import { Form, Button} from '../../style/styled';
-import ListaFormulario from '../teste/ListaFormulario';
 
-export default function PetCadastro() {
 
+export default function PetCadastro(props) {
+  
   return (
     <div>
       <h1>Dados do Pet</h1>
-      <ListaFormulario/>
-      <Form action="#">
+      <Form method='POST' onSubmit={props.addPet}>
         <label htmlFor="nmPet">Nome</label>
-        <input type="text" name="nomePet" />
+        <input type="text" name="nmPet" value={props.nPet.nome} onChange={props.captura}/>
         <label htmlFor="idadePet">Idade</label>
-        <input type="text" name="idadePet" />
+        <input type="text" name="idadePet" value={props.nPet.idade} onChange={props.captura}/>
         <label htmlFor="racaPet">Raça</label>
-        <input type="text" name="racaPet" />
+        <input type="text" name="racaPet" value={props.nPet.raca} onChange={props.captura}/>
         <label htmlFor="tamanhoPet">Tamanho</label>
-        <input type="text" name="tamanhoPet" />
+        <input type="text" name="tamanhoPet" value={props.nPet.tamanho} onChange={props.captura}/>
         <label htmlFor="nmDono">Nome do Dono</label>
-        <input type="text" name="nmDono" />
+        <input type="text" name="nmDono" value={props.nPet.nmDono} onChange={props.captura}/>
         <label htmlFor="telDono">Telefone do Dono</label>
-        <input type="text" name="telDono" />
+        <input type="text" name="telDono" value={props.nPet.telDono} onChange={props.captura}/>
         <label htmlFor="imgPet">Imagem do Pet</label>
-        <input type="file" name="imgPet" />
+        <input type="text" name="imgPet" value={props.nPet.imgPet} onChange={props.captura}/>
         <label htmlFor="obs">Observações</label>
-        <textarea name="obs" cols="30" rows="10"></textarea>
+        <textarea name="obs" cols="30" rows="10" value={props.nPet.obs} onChange={props.captura}></textarea>
 
         <Button type='submit'>Adicionar</Button>
       </Form>
