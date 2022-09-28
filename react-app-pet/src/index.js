@@ -1,10 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import PetCadastro from './components/petCadastro/PetCadastro';
+import ListaPet from './components/listaPet/ListaPet';
 
 ReactDOM.render(
   <>
-    <PetCadastro />
+    <ListaPet />
   </>,
   document.getElementById('root')
 );
