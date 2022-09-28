@@ -75,7 +75,7 @@ export const Button = styled.button`
 
 border-radius : 2px;
     padding: 1vh  8vw;
-    margin: auto;
+    width: 30.5vw;
     border: solid px #277355;
     border-radius: 5px;
     color : #000;
