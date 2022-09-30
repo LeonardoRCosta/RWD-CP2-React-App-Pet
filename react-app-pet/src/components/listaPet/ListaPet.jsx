@@ -18,11 +18,11 @@ export default function ListaPet() {
     },
     {
       nomePet: "Rex",
-      idadePet: "1 ano",
+      idadePet: "3 ano",
       racaPet: "Pitbull",
       tamanhoPet: "Grande",
       nomeDono: "Jão",
-      telDono: "(11) 99999-9999",
+      telDono: "(11) 88888-8888",
       imgPet:
         "https://images.pexels.com/photos/800330/pexels-photo-800330.jpeg?auto=compress&cs=tinysrgb&w=600",
       obs: "Mansinho e dócil",

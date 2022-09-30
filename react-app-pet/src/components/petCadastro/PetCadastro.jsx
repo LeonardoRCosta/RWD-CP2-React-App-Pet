@@ -65,7 +65,7 @@ export default function PetCadastro(props) {
           value={props.novoPet.obs}
           onChange={props.captura}></textarea>
 
-        <Button type="submit">Adicionar</Button>
+        <Button type="submit">Adicionar Pet</Button>
       </Form>
     </div>
   );
