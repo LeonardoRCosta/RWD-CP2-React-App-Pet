@@ -1,72 +1,73 @@
-import React, { useState } from 'react';
-import Pet from '../pet/Pet';
-import PetCadastro from '../petCadastro/PetCadastro';
-import { DivContainer, DivListaPets } from '../../style/styled';
+import React, { useState } from "react";
+import Pet from "../pet/Pet";
+import PetCadastro from "../petCadastro/PetCadastro";
+import { DivContainer, DivListaPets } from "../../style/styled";
 
 export default function ListaPet() {
   const [listaPets, setListaPets] = useState([
     {
-      nomePet: 'Almofadinhas',
-      idadePet: '2 anos',
-      racaPet: 'Labrador',
-      tamanhoPet: 'Médio',
-      nomeDono: 'Harry Potter',
-      telDono: '(11) 99999-9999',
-      imgPet: 'sfdasfasf',
-      obs: 'safasdfsa',
+      nomePet: "Almofadinhas",
+      idadePet: "2 anos",
+      racaPet: "Labrador",
+      tamanhoPet: "Médio",
+      nomeDono: "Harry Potter",
+      telDono: "(11) 99999-9999",
+      imgPet: "https://avatars.githubusercontent.com/u/80916905?v=4",
+      obs: "safasdfsa",
     },
     {
-      nomePet: 'Rex',
-      idadePet: '1 ano',
-      racaPet: 'Pitbull',
-      tamanhoPet: 'Grande',
-      nomeDono: 'Jão',
-      telDono: '(11) 99999-9999',
-      imgPet: 'fdasfdsa',
-      obs: 'safasdfsa',
+      nomePet: "Rex",
+      idadePet: "1 ano",
+      racaPet: "Pitbull",
+      tamanhoPet: "Grande",
+      nomeDono: "Jão",
+      telDono: "(11) 99999-9999",
+      imgPet: "fdasfdsa",
+      obs: "safasdfsa",
     },
     {
-      nomePet: 'Rex',
-      idadePet: '1 ano',
-      racaPet: 'Pitbull',
-      tamanhoPet: 'Grande',
-      nomeDono: 'Jão',
-      telDono: '(11) 99999-9999',
-      imgPet: 'fdasfdsa',
-      obs: 'safasdfsa',
+      nomePet: "Rex",
+      idadePet: "1 ano",
+      racaPet: "Pitbull",
+      tamanhoPet: "Grande",
+      nomeDono: "Jão",
+      telDono: "(11) 99999-9999",
+      imgPet: "fdasfdsa",
+      obs: "safasdfsa",
     },
   ]);
 
   const addPet = (e) => {
     e.preventDefault();
     setNovoPet({
-      nomePet: '',
-      idadePet: '',
-      racaPet: '',
-      tamanhoPet: '',
-      nomeDono: '',
-      telDono: '',
-      imgPet: '',
-      obs: '',
+      nomePet: "",
+      idadePet: "",
+      racaPet: "",
+      tamanhoPet: "",
+      nomeDono: "",
+      telDono: "",
+      imgPet: "",
+      obs: "",
     });
-    setListaPets(...listaPets, novoPet);
+    setListaPets([...listaPets, novoPet]);
   };
 
   const [novoPet, setNovoPet] = useState({
-    nomePet: '',
-    idadePet: '',
-    racaPet: '',
-    tamanhoPet: '',
-    nomeDono: '',
-    telDono: '',
-    imgPet: '',
-    obs: '',
+    nomePet: "",
+    idadePet: "",
+    racaPet: "",
+    tamanhoPet: "",
+    nomeDono: "",
+    telDono: "",
+    imgPet: "",
+    obs: "",
   });
 
   const captura = (e) => {
-    const {name, value} = e.target;
+    const { name, value } = e.target;
+    console.log(name, value);
 
-    if (name === 'nomePet') {
+    if (name === "nomePet") {
       setNovoPet({
         nomePet: value,
         idadePet: novoPet.idadePet,
@@ -78,7 +79,7 @@ export default function ListaPet() {
         obs: novoPet.obs,
       });
     }
-    if (name === 'idadePet') {
+    if (name === "idadePet") {
       setNovoPet({
         nomePet: novoPet.nomePet,
         idadePet: value,
@@ -90,7 +91,7 @@ export default function ListaPet() {
         obs: novoPet.obs,
       });
     }
-    if (name === 'racaPet') {
+    if (name === "racaPet") {
       setNovoPet({
         nomePet: novoPet.nomePet,
         idadePet: novoPet.idadePet,
@@ -102,7 +103,7 @@ export default function ListaPet() {
         obs: novoPet.obs,
       });
     }
-    if (name === 'tamanhoPet') {
+    if (name === "tamanhoPet") {
       setNovoPet({
         nomePet: novoPet.nomePet,
         idadePet: novoPet.idadePet,
@@ -114,7 +115,7 @@ export default function ListaPet() {
         obs: novoPet.obs,
       });
     }
-    if (name === 'nomeDono') {
+    if (name === "nomeDono") {
       setNovoPet({
         nomePet: novoPet.nomePet,
         idadePet: novoPet.idadePet,
@@ -126,7 +127,7 @@ export default function ListaPet() {
         obs: novoPet.obs,
       });
     }
-    if (name === 'telDono') {
+    if (name === "telDono") {
       setNovoPet({
         nomePet: novoPet.nomePet,
         idadePet: novoPet.idadePet,
@@ -138,7 +139,7 @@ export default function ListaPet() {
         obs: novoPet.obs,
       });
     }
-    if (name === 'imgPet') {
+    if (name === "imgPet") {
       setNovoPet({
         nomePet: novoPet.nomePet,
         idadePet: novoPet.idadePet,
@@ -150,7 +151,7 @@ export default function ListaPet() {
         obs: novoPet.obs,
       });
     }
-    if (name === 'obs') {
+    if (name === "obs") {
       setNovoPet({
         nomePet: novoPet.nomePet,
         idadePet: novoPet.idadePet,
