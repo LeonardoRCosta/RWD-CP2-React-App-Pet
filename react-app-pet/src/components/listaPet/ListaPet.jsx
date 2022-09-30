@@ -7,13 +7,14 @@ export default function ListaPet() {
   const [listaPets, setListaPets] = useState([
     {
       nomePet: "Almofadinhas",
-      idadePet: "2 anos",
-      racaPet: "Labrador",
+      idadePet: "32 anos",
+      racaPet: "Sem raça definida",
       tamanhoPet: "Médio",
       nomeDono: "Harry Potter",
       telDono: "(11) 99999-9999",
-      imgPet: "https://avatars.githubusercontent.com/u/80916905?v=4",
-      obs: "safasdfsa",
+      imgPet:
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQJw5ZKwBmSTjPY8wXmMW3Su2AONbl2Vo2gw&usqp=CAU",
+      obs: "Talvez não seja um cachorro...",
     },
     {
       nomePet: "Rex",
@@ -22,18 +23,9 @@ export default function ListaPet() {
       tamanhoPet: "Grande",
       nomeDono: "Jão",
       telDono: "(11) 99999-9999",
-      imgPet: "fdasfdsa",
-      obs: "safasdfsa",
-    },
-    {
-      nomePet: "Rex",
-      idadePet: "1 ano",
-      racaPet: "Pitbull",
-      tamanhoPet: "Grande",
-      nomeDono: "Jão",
-      telDono: "(11) 99999-9999",
-      imgPet: "fdasfdsa",
-      obs: "safasdfsa",
+      imgPet:
+        "https://images.pexels.com/photos/800330/pexels-photo-800330.jpeg?auto=compress&cs=tinysrgb&w=600",
+      obs: "Mansinho e dócil",
     },
   ]);
 
@@ -49,6 +41,7 @@ export default function ListaPet() {
       imgPet: "",
       obs: "",
     });
+
     setListaPets([...listaPets, novoPet]);
   };
 
@@ -65,7 +58,6 @@ export default function ListaPet() {
 
   const captura = (e) => {
     const { name, value } = e.target;
-    console.log(name, value);
 
     if (name === "nomePet") {
       setNovoPet({
