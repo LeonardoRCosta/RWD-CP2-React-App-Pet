@@ -1,17 +1,19 @@
-import React from 'react'
-import { DivPet } from '../../style/styled'
+import React from "react";
+import { DivPet, PetImg } from "../../style/styled";
 
 export default function Pet(props) {
   return (
     <DivPet>
-        <h2>Nome: {props.nomePet}</h2>
-        <h3>Idade: {props.idadePet}</h3>
-        <p>Raça: {props.racaPet}</p>
-        <p>Tamanho: {props.tamanhoPet}</p>
-        <p>Nome do Dono: {props.nomeDono}</p>
-        <p>Telefone do Dono: {props.telDono}</p>
-        <p>Imagem do Pet: {props.imgPet}</p>
-        <p>Observações: {props.obs}</p>
+      <figure>
+        <PetImg src={props.imgPet} alt="Imagem do pet" />
+      </figure>
+      <h2>{props.nomePet}</h2>
+      <p>Idade: {props.idadePet}</p>
+      <p>Raça: {props.racaPet}</p>
+      <p>Tamanho: {props.tamanhoPet}</p>
+      <p>Nome do Dono: {props.nomeDono}</p>
+      <p>Telefone do Dono: {props.telDono}</p>
+      <p>Observações: {props.obs}</p>
     </DivPet>
-  )
+  );
 }
