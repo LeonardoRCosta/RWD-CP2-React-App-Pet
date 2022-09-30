@@ -5,6 +5,7 @@ export const Form = styled.form`
   flex-direction: column;
   row-gap: 1.5vh;
   h1 {
+    text-align: center;
     background-color: #faaf00;
     padding: 1vh;
     border-radius: 5px;
@@ -57,6 +58,11 @@ export const DivContainer = styled.div`
     align-items: center;
     font-size: 80%;
   }
+  @media (max-width: 740px) {
+    h1 {
+      font-size: 22px;
+    }
+  }
 `;
 
 export const DivListaPets = styled.div`
@@ -87,10 +93,12 @@ export const DivPet = styled.div`
   }
   @media (max-width: 800px) {
     height: 80%;
+    width: 90%;
   }
 `;
 
 export const PetImg = styled.img`
   width: 150px;
+  height: 150px;
   border-radius: 5px;
 `;
