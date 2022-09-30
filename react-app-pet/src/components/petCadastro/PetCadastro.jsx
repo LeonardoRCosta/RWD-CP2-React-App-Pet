@@ -5,7 +5,7 @@ export default function PetCadastro(props) {
   return (
     <div>
       <Form method="post" onSubmit={props.addPet}>
-        <h1>🦴&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dados do Pet&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🦴</h1>
+        <h1>🦴Dados do Pet🦴</h1>
         <label htmlFor="nomePet">Nome</label>
         <input
           type="text"
